@@ -1,0 +1,44 @@
+{
+  "awards": [
+    {
+      "label": "1st place - Qrack-It - Kriya 23",
+      "image": {
+        "src": "../../images/PSG_College.jpg",
+        "alt": ""
+      },
+      "dates": "03/2023 ",
+      "venue":"PSG college of Technology, Coimbatore",
+      "description": "Applied concepts of Cloud and gained practical experience in building infrastructure on AWS and explored various AWS Cloud Best Practices." 
+    },
+    {
+      "label": "2nd Place - CodeAstra 22",
+      "image": {
+        "src": "../../images/amrita.jpg",
+        "alt": ""
+      },
+      "dates": "08/2022",
+      "venue": "Amrita Vishwa Vidhyapeetham, Chennai",
+      "description": " College wide, Competitive coding Competition consisting of 1 round of coding and leetcode 7 problems. " 
+    },
+    {
+      "label": "1st Place - CodeInfo - 20",
+      "image": {
+        "src": "../../images/Kumaraguru_College.png",
+        "alt": ""
+      },
+      "dates": "02/2020",
+      "venue": "Kumaraguru College of Technology, Coimbatore",
+      "description": "A coding Competition for School Students, consisting of 3 rounds of Coding and an interview. Aced the competition and won first place the only place secured by my school." 
+    },
+    {
+      "label": "Subject Topper Computer Science ",
+      "image": {
+        "src": "../../images/Stanes-school.png",
+        "alt": ""
+      },
+      "dates": "08/2019",
+      "venue":"Stanes School ICSE/ISC, Coimbatore",
+      "description": "Academic Distinction for scoring full on the Computer Science paper. Recognised in front of the entire School. " 
+    }
+  ]
+}

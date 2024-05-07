@@ -1,0 +1,76 @@
+{
+  "certificates": [
+    {
+      "label": "AWS Academy Cloud Architecting",
+      "image": {
+        "src": "../../images/cloud-architecting.png",
+        "alt": ""
+      },
+      "dates": {
+        "start": "01/2004 ",
+        "end": "02/2024"
+      },
+      "description": "Applied concepts of Cloud and gained practical experience in building infrastructure on AWS and explored various AWS Cloud Best Practices." 
+    },
+    {
+      "label": "AWS Academy Cloud foundations",
+      "image": {
+        "src": "../../images/cloud-foundations.png",
+        "alt": ""
+      },
+      "dates": {
+        "start": "01/2014 ",
+        "end": "02/2014"
+      },
+      "description": "Explored various cloud concepts, AWS core services, security, architecture, pricing, and support, and obtained practical knowledge of the working of AWS and its components." 
+    },
+    {
+      "label": "People and Soft Skills for Professional and Personal Success - IBM",
+      "image": {
+        "src": "../../images/ibm-soft-skills.png",
+        "alt": ""
+      },
+      "dates": {
+        "start": "09/2023",
+        "end": "10/2023"
+      },
+      "description": "Practised and utilised soft skills in the workplace and Explored ways to manage a team of 5+ members effectively." 
+    },
+    {
+      "label": "Technical Support fundamentals - Google",
+      "image": {
+        "src": "../../images/google.png",
+        "alt": ""
+      },
+      "dates": {
+        "start": "07/2023",
+        "end": "08/2023"
+      },
+      "description": "Studied the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. " 
+    },
+    {
+      "label": "Intro to Machine Learning - Kaggle",
+      "image": {
+        "src": "../../images/kaggle.png",
+        "alt": ""
+      },
+      "dates": {
+        "start": "06/2023 ",
+        "end": "06/2023"
+      },
+      "description": "Coded 3+ diverse ML models and gained practical insight into building AI models and applications." 
+    },
+    {
+      "label": "Introduction to Cybersecurity",
+      "image": {
+        "src": "../../images/cisco-cybersecurity.png",
+        "alt": ""
+      },
+      "dates": {
+        "start": "03/2022 ",
+        "end": "06/2022"
+      },
+      "description": "Explored the fundamentals of cybersecurity and gained practical experience in securing networks, systems, and data from cyber threats." 
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "intro": "Hola! ",
+  "heroPhoto": {
+    "src": "../../images/lego-dummy.png",
+    "alt": "My Photo"
+  },
+  "image": {
+    "src": "../../images/waving-hand.png",
+    "alt": "Waving Hand Emoji"
+  },
+  "title": "I'm Tarun R G",
+  "subtitle": {
+    "prefix": " ",
+    "highlight": "  ",
+    "suffix": " "
+  },
+  "description":"I'm a Computer Science student based in Coimbatore, India, specializing in building exceptional websites. Proficient in both frontend and backend development, I merge technical expertise with creativity to craft engaging digital experiences.",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Github", "Mail"],
+    "showIcons": true
+  }
+}

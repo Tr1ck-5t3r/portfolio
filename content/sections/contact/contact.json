@@ -1,0 +1,13 @@
+{
+  "name": "Tarun R G",
+  "email": "tarun.govindh@gmail.com",
+  "description": "Wanna have a chat?, kindly reach out to me via the following. Have a nice day :)",
+  "image": {
+    "src": "../../images/favicon.png",
+    "alt": "Gatsby Logo"
+  },
+  "socialProfiles": {
+    "from": ["LinkedIn", "Github", "Mail"],
+    "showIcons": true
+  }
+}

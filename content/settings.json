@@ -1,0 +1,38 @@
+{
+  "siteMetadata": {
+    "language": "en",
+    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
+    "title": "Tarun's Portfolio",
+    "titleTemplate": "%s · Portfolio Minimal",
+    "description": "A personal portfolio for Tarun.",
+    "author": "Tarun R G",
+    "avatar": "../content/images/gatsby.png",
+    "bio": "I'm a Computer Science and Engineering students based in Coimbatore, India specializing in building exceptional websites.",
+    "social": {
+      "behance": "https://behance.com",
+      "github": "https://github.com/tr1ck-5t3r",
+      "linkedin": "https://www.linkedin.com/in/tarun-r-g/",
+      "mail": "mailto:tarun.govindh@gmail.com"
+    }
+  },
+  "siteConfiguration": {
+    "logo": { "text": "Tarun R G" },
+    "navigation": {
+      "header": [
+        { "label": "Projects", "url": "/projects" },
+        { "label": "Experience", "url": "/#experience" },
+        { "label": "Awards","url":"/awards"},
+        { "label": "Certifications", "url": "/certificates" },
+        { "label": "Contact", "url": "/#contact" }
+      ],
+      "footer": [
+        { "label": "Back to top", "url": "/" }
+      ]
+    },
+    "featureToggles": {
+      "useDarkModeAsDefault": false,
+      "useDarkModeBasedOnUsersPreference": true,
+      "useCookieBar": false
+    }
+  }
+}

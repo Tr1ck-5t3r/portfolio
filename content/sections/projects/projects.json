@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "visible": true,
+      "category": "🗓️ 5/5/2024 - 1/6/2024",
+      "title": "Machine Learning Intern - Prodigy InfoTech",
+      "description": "Implented various Machine Learning models and gained practical experience in the field of Artificial Intelligence. Worked on projects like Sentiment Analysis, Image Recognition, and Speech Recognition.",
+      "tags": ["Machine Learning", "Aritifical Intelligence"],
+      "image": {
+        "src": "../../images/prodigy-infotech.png",
+        "alt": "Prodigy InfoTech"
+      }
+    },
+    {
+      "visible": true,
+      "category": "🗓️ 12/12/2023 - 12/02/2024",
+      "title": "Intern - Radical AI",
+      "description": "Successfully executed projects, achieving a 20% reduction in bugs and enhancing overall software stability. Proficient in cutting-edge technologies like OpenAI, Firebase, TensorFlow, Node.js, and React.js. Collaborated effectively with a 3-member team, ensuring timely project delivery and innovative solutions. ",
+      "tags": ["Full Stack Development", "Aritifical Intelligence"],
+      "image": {
+        "src": "../../images/radicalx-ai.jpg",
+        "alt": "Extendable Layout"
+      }
+    }
+  ],
+  "button": {
+    "visible": false,
+    "label": "Visit on Github",
+    "url": "https://github.com/tr1ck-5t3r"
+  }
+}

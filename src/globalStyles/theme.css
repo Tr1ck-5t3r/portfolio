@@ -1,0 +1,90 @@
+body[data-theme='darkTheme'] {
+    --primary-color: #a6ceff;
+    --secondary-color: #003e8f;
+    --tertiary-color: #252525;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --subtext-color: #aaaaaa;
+    --background-color: #121212;
+    --card-background-color: #1c1c1c;
+    --scroll-bar-color: rgba(255, 255, 255, 0.5);
+    --box-shadow-color: rgba(0, 0, 0, 0.16);
+    --box-shadow-hover-color: rgba(0, 0, 0, 0.32);
+    --base-font: 'Roboto', Arial, sans-serif;
+    --code-block-bg: #151f28;
+    --code-block-var: #ff39a7;
+    --code-block-num: #fed703;
+    --code-block-fun: #c653ff;
+    --code-block-keyword: #2bdcff;
+    --code-block-comment: #8292a2;
+    --code-block-tkimp: #fd971f;
+    font-size: medium;
+    text-align: justify;
+}
+
+.accordion{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.accordion__items{
+    width: 90%;
+}
+
+.accordion__item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+}
+.accordion__item__content{
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2rem;
+    background-color: #25252530;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;   
+    @media screen and (max-width: 600px){
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+}
+
+.accordion__image{
+    @media screen and (max-width: 600px){
+        display: none;
+    }
+    padding: 10px 30px ;
+}
+
+.accordion__button{
+    padding: 7px 25px;
+    margin: 0px 10px;
+    background-color: transparent;
+    color: var(--subtext-color);
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    border: 2px solid var(--subtext-color);
+}
+.accordion__button:hover{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.active {
+    padding: 7px 25px;
+        margin: 0px 10px;
+        background-color: transparent;
+        color: var(--primary-color);
+        font-size: 1rem;
+        font-weight: 300;
+        border-radius: 0.9rem;
+        cursor: pointer;
+        border: 2px solid var(--primary-color);
+}

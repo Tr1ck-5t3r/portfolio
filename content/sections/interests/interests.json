@@ -1,0 +1,93 @@
+{
+  "interests": [
+    {
+      "label": "React",
+      "image": {
+        "src": "../../images/react.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Core Java",
+      "image": {
+        "src": "../../images/java.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Python",
+      "image": {
+        "src": "../../images/python.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "JavaScript",
+      "image": {
+        "src": "../../images/javascript.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "TypeScript",
+      "image": {
+        "src": "../../images/typesript.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Machine Learning",
+      "image": {
+        "src": "../../images/ml.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Tensorflow",
+      "image": {
+        "src": "../../images/tf.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Node JS",
+      "image": {
+        "src": "../../images/node.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Express JS",
+      "image": {
+        "src": "../../images/express.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Mongo DB",
+      "image": {
+        "src": "../../images/react.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Jupyer Notebooks",
+      "image": {
+        "src": "../../images/notebook.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Responsive Design",
+      "image": {
+        "src": "../../images/nail-polish.png",
+        "alt": ""
+      }
+    }
+  ],
+  "button": {
+    "visible": true,
+    "label": "+ Load More",
+    "initiallyShownInterests": 5
+  }
+}
