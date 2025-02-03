@@ -1,0 +1,79 @@
+---
+title: 'Medix'
+description: 'React-based application to predict symptoms and aid the diagnostic process'
+pubDate: 'Jan 2025'
+heroImage: '/project.webp'
+---
+
+import Code from '../../components/Code.astro';
+
+# TL;DR
+
+Medix is a React-based application designed to assist in the diagnostic process by predicting and diagnosing symptoms.  
+The app uses FastAPI for the backend, TensorFlow and Keras for symptom prediction, and Clerk for secure authentication.
+
+# Introduction
+
+Medix is an innovative application that helps healthcare professionals and individuals predict or diagnose symptoms based on input data.  
+Built using React for the frontend and FastAPI for the backend, Medix allows users to quickly input symptoms and receive accurate predictions.  
+The application uses TensorFlow and Keras to leverage machine learning models for diagnosis, ensuring reliable and fast results.
+
+# 🚀 Key Features  
+
+✅ Symptom Prediction & Diagnosis – Input symptoms and receive a prediction or diagnosis based on trained machine learning models.  
+🔒 Secure Authentication – Powered by Clerk for secure login and user management.  
+💡 User-Friendly Interface – A clean and easy-to-navigate interface built with React and Bootstrap.  
+📡 Real-Time Data Processing – Uses FastAPI for fast and efficient backend processing.  
+🔬 Machine Learning Model – Built with TensorFlow and Keras for accurate and reliable predictions.  
+⚙️ Full-Stack Solution – Includes both frontend (React) and backend (FastAPI) for a seamless experience.
+
+# 🛠️ Tech Stack  
+
+- Frontend: React, Clerk, FontAwesome, Bootstrap  
+- Backend: FastAPI, TensorFlow, Keras  
+- Package Management: Yarn  
+- Machine Learning: TensorFlow, Keras  
+
+# 📸 Screenshots  
+
+![Medix Screenshot 1](/project-2/medix-1.jpg)  
+![Medix Screenshot 2](/project-2/medix-2.jpg)  
+![Medix Screenshot 3](/project-2/medix-3.jpg)  
+# 📚 How to Use  
+
+To get started with Medix, follow these steps:  
+
+1. **Clone the repository**  
+    <Code lang="bash">
+    ```sh
+    git clone https://github.com/Tr1ck-5t3r/Medix/tree/main
+    cd Frontend
+    ```
+    </Code>
+2. Run <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}>`yarn`</span> to install the dependencies
+3. Run <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}>`yarn run dev`</span> to start the frontend
+4. Change directory to the backend folder:
+    <Code lang="bash">
+    ```sh
+    cd ../server
+    ```
+    </Code>
+5. Install the Python dependencies:
+    <Code lang="bash">
+    ```sh
+    pip install -r requirements.txt
+    ```
+    </Code>
+6. Start the backend server with **Uvicorn**:
+    <Code lang="bash">
+    ```sh
+    uvicorn main:app
+    ```
+    </Code>
+7. Visit <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}> `http://localhost:8000`</span> in your browser
+
+# Conclusion
+
+Medix is a cutting-edge diagnostic tool designed to aid healthcare professionals and individuals in predicting and diagnosing symptoms.  
+With its powerful machine learning models, user-friendly interface, and secure authentication, Medix provides a robust solution for the healthcare industry.  
+By combining React on the frontend and FastAPI on the backend, Medix delivers real-time predictions and an intuitive user experience.

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Syncopate:wght@400;700&display=swap');
+
+html.light {
+  --bg-color: #f8feff;
+  --bg-muted: #c7c7c70d;
+  --bg-alt: #181818;
+  --text-color: #121313;
+  --text-alt: #ebf0f3;
+  --text-light: #3a3a3a;
+  --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --highlight-bg: #212121;
+  --highlight-text: #f8feff;
+  --mesh-1: rgba(42, 43, 44, 0.982);
+  --mesh-2: rgba(66, 66, 66, 0.05);
+  --hero-bg: #090909;
+  --hero-text: #f8feff;
+  --waves: #bbd2ee;
+  --clr-1: #228378;
+  --clr-2: #3b74bb;
+  --clr-3: #1f9bb4;
+  --bg-code: #12223f;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  --bg-color: #141414;
+  --bg-muted: #1f1f1f;
+  --bg-alt: #efefef;
+  --text-color: #fafafa;
+  --text-light: #ffffff;
+  --text-alt: #252525;
+  --mesh-1: rgba(220, 220, 220, 0.982);
+  --mesh-2: rgba(220, 220, 220, 0.1);
+  --nav-shadow: 0 3px 6px rgba(255, 255, 255, 0.05);
+  --highlight-bg: #f8feff;
+  --highlight-text: #121313;
+  --hero-bg: #090909;
+  --hero-text: #f8feff;
+  --waves: #3b6ba5;
+  --clr-1: #b2f7ef;
+  --clr-2: #7fb8ff;
+  --clr-3: #7bdff2;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Customize Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 8px 14px;
+  font-size: 18px;
+  border: none;
+  background: var(--mesh-2);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--mesh-1);
+  color: var(--text-alt);
+}
+
+.btn:hover::after {
+  content: '↗';
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Project Cards */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: var(--mesh-2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-body h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.project-body p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-2);
+  cursor: pointer;
+}

@@ -1,0 +1,117 @@
+---
+import { awards } from '../consts';
+import type { Award } from '../consts';
+
+const validatedAwards: Award[] = awards;
+---
+
+<section id="awards" class="awards-section">
+  <div class="awards-container">
+    <h2 class="section-title">My Awards 🏆 & Publications 📢</h2>
+    <div class="awards-grid">
+      {validatedAwards.map(({ title, image, dates, venue, description }) => (
+        <div class="award-card">
+          <div class="award-header">
+            <img src={image.src} alt={image.alt || title} class="award-image" loading="lazy" />
+          </div>
+          <div class="award-body">
+            <h3>{title}</h3>
+            <p class="award-date">{dates}</p>
+            <p class="award-venue"><strong>Venue:</strong> {venue}</p>
+            <p>{description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .awards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+    padding: 4rem 2rem;
+  }
+
+  .awards-container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .award-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-muted);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+
+  .award-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--nav-shadow);
+  }
+
+  .award-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .award-image {
+    width: auto;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .award-body {
+    text-align: left;
+    padding-top: 1rem;
+    color: var(--text-color);
+  }
+
+  .award-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+
+  .award-body .award-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .award-body .award-venue {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .award-body p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
+  @media (max-width: 768px) {
+    .awards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

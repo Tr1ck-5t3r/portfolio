@@ -1,0 +1,44 @@
+---
+const { lang = 'sh' } = Astro.props;
+---
+
+<style>
+  .pre {
+    background: #1e1e1e;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    margin: 1em 0;
+  }
+
+  pre{
+    padding: 1em;
+  }
+
+  code {
+    font-family: 'Fira Code', monospace;
+  }
+
+  .lang{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+</style>
+
+
+<div class="pre">
+  <button class="lang">{lang}</button>
+  <slot />
+</div> 

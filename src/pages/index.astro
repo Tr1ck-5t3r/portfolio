@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AboutMini from '../components/AboutMini.astro';
+import Hero from '../components/Hero.astro';
+import { Name, SITE_DESCRIPTION } from '../consts';
+import Projects from '../components/Projects.astro';
+import Experience from '../components/Experience.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={Name} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Hero />
+      <AboutMini />
+      <Experience />
+      <Projects />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,73 @@
+---
+title: 'Musix Player'
+description: 'Next.js-based music sharing and playing platform'
+pubDate: 'May 2024'
+heroImage: '/project1.jpeg'
+---
+
+import Code from '../../components/Code.astro';
+
+
+# TL;DR
+
+**Musix** is a music-sharing and streaming platform built with Next.js. It allows users to share their favorite songs and playlists with friends and discover new music.  
+The app features a clean and intuitive interface, making it easy to navigate and find the perfect song for any mood or occasion.  
+It uses Clerk for authentication and Convex for storing and fetching songs.  
+
+# Introduction
+
+Musix is an innovative music-sharing and streaming platform designed to provide users with a seamless and enjoyable music experience.  
+It allows users to share songs and playlists with friends, discover new tracks and artists, and curate personalized music collections.  
+Whether you're looking for the perfect soundtrack for your day or exploring trending hits, Musix offers a smooth and intuitive interface to enhance your listening journey.  
+
+# 🚀 Key Features  
+
+✅ **Music Sharing & Discovery** – Share songs and playlists effortlessly with friends and explore personalized recommendations.  
+🔒 **Secure Authentication** – Powered by Clerk for seamless and safe login.  
+📡 **Real-Time Data Storage & Retrieval** – Uses Convex for efficient song storage and access.  
+🎨 **Minimalist UI/UX Design** – Clean and user-friendly interface for smooth navigation.  
+🎚️ **Custom Favorites & Playlists** – Easily create, edit, and manage your music library.  
+🔊 **High-Quality Streaming** – Enjoy uninterrupted, high-fidelity music streaming.  
+
+# 🛠️ Tech Stack  
+
+- **Frontend**: Next.js, React, Clerk, Convex, Tailwind CSS, ShadCN  
+- **Backend**: Convex, Clerk  
+- **Database**: Convex  
+
+# 📸 Screenshots  
+
+![Musix Player](/project-1/musix.jpg)
+![Musix Player](/project-1/musix-2.jpg)
+
+# 📚 How to Use  
+
+To get started with **Musix**, follow these steps:  
+
+1. **Clone the repository**  
+    <Code lang="bash">
+    ```sh
+    git clone https://github.com/Tr1ck-5t3r/musix-player.git
+    cd musix
+    ```
+    </Code>
+2. Run <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}>`npm install`</span> to install the dependencies
+3. Create a <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}>`.env.local`</span> file in the root directory
+4. Add the following environment variables to the `.env.local` file:
+    <Code lang="bash">
+    ```sh
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your clerk publishable key>
+    CLERK_SECRET_KEY=<your clerk secret key>
+    CONVEX_DEPLOYMENT=<your convex deployment>
+    NEXT_PUBLIC_CONVEX_URL=<your convex url>
+    ```
+    </Code>
+5. Run <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}>`npm run dev`</span>
+6. Run <span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}>`npx convex dev`</span> to start the Convex server
+7. Visit<span style={{"font-size":"14px","background-color":"#1f1f1f","padding":"2px 8px","color":"#abdbfe"}}> `http://localhost:3000`</span> in your browser
+
+# Conclusion
+
+Musix is a cutting-edge music-sharing platform that offers a seamless and enjoyable music experience for users.
+With its intuitive interface, secure authentication, and real-time data storage capabilities, Musix is designed to enhance your music journey.
+Whether you're sharing your favorite songs with friends or discovering new tracks, Musix provides a user-friendly platform to enjoy high-quality music streaming.

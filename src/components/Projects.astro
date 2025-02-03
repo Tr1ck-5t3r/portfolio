@@ -1,0 +1,81 @@
+---
+import { projectsHome as projects } from '../consts';
+---
+
+<section id="projects" class="projects">
+  <div class="projects-container">
+    <h3 class="section-title">Check out my Projects 💻</h3>
+    <div class="projects-grid">
+      {
+        projects.map(({ title, description, link, image }) => (
+          <div class="project-card">
+            <div class="project-header">
+              <img src={image} alt={title} class="project-image" />
+            </div>
+            <div class="project-body">
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </div>
+            <div class="project-footer">
+              <a href={link} class="btn" target="_blank">
+                View Project
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <div class="project-footer">
+      <button class="btn view-more">View More Projects</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects {
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-container {
+    width: 70dvw;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  
+
+  .project-footer {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-link {
+    text-decoration: none;
+    color: var(--text-alt);
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  .view-more {
+    margin-top: 30px;
+  }
+</style>

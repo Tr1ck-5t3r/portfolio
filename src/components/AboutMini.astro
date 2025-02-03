@@ -1,0 +1,252 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+import { interests, current_company } from '../consts';
+type IconName =
+  | 'seti:java'
+  | 'seti:python'
+  | 'seti:javascript'
+  | 'seti:react'
+  | 'seti:docker'
+  | 'github' // Add any custom icon names you use
+  | 'node'
+  | 'astro';
+---
+
+<section id="about" class="about">
+  <div class="about-container">
+    <div class="left">
+      <div class="animation-container">
+        <h2>I'm a</h2>
+        <div class="animation">
+          <div class="first"><div>Data Analyst</div></div>
+          <div class="second"><div>Web Developer</div></div>
+          <div class="third"><div>Deep learning Enthusiast</div></div>
+        </div>
+      </div>
+      <div class="interests">
+        My interests :
+        <div class="interests-grid">
+          {
+            interests.map(
+              ({ name, icon }: { name: string; icon: IconName }) => (
+                <div class="interest">
+                  <Icon name={icon} />
+                  {name}
+                </div>
+              )
+            )
+          }
+        </div>
+      </div>
+      <div class="call">
+        <a class="btn" href="/about">More about me!</a>
+      </div>
+      <div></div>
+    </div>
+    <div class="right">
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+        type="module"></script>
+      <dotlottie-player
+        src="https://lottie.host/fe3d074f-15ce-4a8a-a372-57464be2595b/yKo7T5VslD.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 500px; height: 500px"
+        loop
+        autoplay
+      >
+      </dotlottie-player>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    height: 90dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .about-container {
+    width: 80dvw;
+    border-radius: 10px;
+    background-color: var(--bg-);
+    height: 70dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .interest {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Space between icon and text */
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 6px 8px;
+    font-size: 18px;
+    border: none;
+    background: var(--bg-muted);
+    cursor: pointer;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .interest:hover {
+    background-color: var(--mesh-1);
+    color: var(--text-alt);
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .animation-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1rem;
+    font-weight: 600;
+    color: var(--text-alt);
+  }
+
+  .animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    width: 100%;
+    margin-bottom: 2.81rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+  }
+
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+
+  .first div {
+    background-color: var(--clr-1);
+  }
+  .second div {
+    background-color: var(--clr-2);
+  }
+  .third div {
+    background-color: var(--clr-3);
+  }
+
+  @keyframes text-animation {
+    0% {
+      margin-top: 0;
+    }
+    10% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: -5.62rem;
+    }
+    30% {
+      margin-top: -5.62rem;
+    }
+    40% {
+      margin-top: -11.24rem;
+    }
+    60% {
+      margin-top: -11.24rem;
+    }
+    70% {
+      margin-top: -5.62rem;
+    }
+    80% {
+      margin-top: -5.62rem;
+    }
+    90% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  .interests {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 2fr)
+    ); /* Responsive grid */
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .work {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call {
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .work .img {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .right {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .about-container {
+      width: 100dvw;
+      border-radius: 10px;
+      background-color: var(--bg-);
+      height: 70dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .left {
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .animation-container {
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .animation-container {
+      font-size: 1.2rem;
+    }
+  }
+</style>

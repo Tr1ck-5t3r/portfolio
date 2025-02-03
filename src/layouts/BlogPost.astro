@@ -1,0 +1,158 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+type Props = CollectionEntry<'projects'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      main {
+        width: calc(100% - 2em);
+        max-width: 100%;
+        margin: 0;
+        color: var(--text-color);
+        font-size: 1rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        line-height: 1.6; /* Increased line height for better readability */
+        font-weight: 400;
+      }
+      .hero-image {
+        width: 100%;
+      }
+      .hero-image img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+        box-shadow: var(--box-shadow);
+        object-fit: cover;
+      }
+      .prose {
+        width: 750px;
+        max-width: calc(100% - 2em);
+        margin: auto;
+        padding: 1em;
+        color: var(--text-color);
+      }
+      .title {
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 1.2;
+      }
+      .date {
+        margin-bottom: 0.5em;
+        color: rgb(var(--text-muted));
+      }
+      .last-updated-on {
+        font-style: italic;
+      }
+
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: var(--text-color);
+        padding: 8px 14px;
+        font-size: 14px;
+        margin-top: 20px;
+        border: none;
+        background: var(--mesh-2);
+        cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      .back:hover {
+        background-color: var(--mesh-1);
+        color: var(--text-alt);
+      }
+
+      img {
+        border-radius: 10px;
+        width: 700px;
+        height: auto;
+      }
+
+      .back:hover::before {
+        content: '←';
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 4px;
+      }
+
+      /* Code block styles */
+      pre {
+        background: #1e1e1e; /* Dark background for code blocks */
+        color: #ffffff; /* Light text for contrast */
+        padding: 1em;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-size: 0.9em;
+        line-height: 1.5;
+      }
+
+      code {
+        font-family: "Fira Code", monospace;
+        font-size: 0.95em;
+        background: #282c34;
+        color: #f8f8f2;
+        padding: 2px 5px;
+        border-radius: 5px;
+      }
+
+      pre code {
+        display: block;
+        padding: 0;
+        background: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <article>
+        <div class="hero-image">
+          {
+            heroImage && (
+              <img
+                height={300}
+                width={800}
+                src={heroImage}
+                alt="project hero image"
+              />
+            )
+          }
+        </div>
+        <div class="prose">
+          <a class="back" href="/projects">Back</a>
+          <div class="title">
+            <div class="date">
+              {
+                updatedDate && (
+                  <div class="last-updated-on">
+                    Last updated on {updatedDate}
+                  </div>
+                )
+              }
+            </div>
+            <h1>{title}</h1>
+            <h3>{description}</h3>
+            <FormattedDate date={pubDate} />
+            <br />
+          </div>
+          <slot />
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

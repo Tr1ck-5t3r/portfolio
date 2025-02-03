@@ -1,0 +1,107 @@
+---
+import { certificates } from '../consts';
+import type { Certificate } from '../consts';
+
+const validatedCertificates: Certificate[] = certificates;
+---
+
+<section id="certificates" class="certificates-section">
+  <div class="certificates-container">
+    <h2 class="section-title">My Certifications 🏆</h2>
+    <div class="certificates-grid">
+      {validatedCertificates.map(({ label, image, dates, description }) => (
+        <div class="certificate-card">
+          <div class="certificate-header">
+            <img src={image.src} alt={image.alt || label} class="certificate-image" loading="lazy" />
+          </div>
+          <div class="certificate-body">
+            <h3>{label}</h3>
+            <p class="date-range">{dates.start} - {dates.end}</p>
+            <p>{description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .certificates-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+    padding: 4rem 2rem;
+  }
+
+  .certificates-container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .certificate-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-muted);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+
+  .certificate-card:hover {
+    transform: scale(1.05);
+        box-shadow: var(--nav-shadow);
+  }
+
+  .certificate-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .certificate-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .certificate-body {
+    text-align: left;
+    padding-top: 1rem;
+  }
+
+  .certificate-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+
+  .certificate-body .date-range {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .certificate-body p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
+  @media (max-width: 768px) {
+    .certificates-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

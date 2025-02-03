@@ -1,0 +1,58 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+import { SOCIAL_MEDIA as sc } from '../consts';
+---
+
+<footer>
+  Made with 🫀 by Tarun R G
+  <div class="social-links">
+    <a href={sc.linkedin} target="_blank">
+      <span class="sr-only">Follow Astro on LinkedIn</span>
+      <Icon name="linkedin" class="icon" />
+    </a>
+    <a href={sc.email} target="_blank">
+      <span class="sr-only">Reach out to me at Gmail</span>
+      <Icon name="email" class="icon" />
+    </a>
+    <a href={sc.github} target="_blank">
+      <span class="sr-only">Go to Astro's GitHub repo</span>
+      <Icon name="github" class="icon" />
+    </a>
+  </div>
+</footer>
+<style>
+  footer {
+    padding: 2em 1em 6em 1em;
+    background: radial-gradient(circle, var(--bg-color), var(--bg-color-muted))
+      no-repeat;
+    color: var(--text-color);
+    text-align: center;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  .social-links a:hover {
+    color: var(--text-color);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+</style>
