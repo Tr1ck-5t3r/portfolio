@@ -8,7 +8,7 @@ import { experience } from '../consts';
     <div class="experience-grid">
       {
         experience.map(({ company, role, duration, description, logo }) => (
-          <div class="experience-card">
+          <div class="experience-card fadediv">
             <div class="experience-header">
               <div class="exp-img">
                 <img src={logo} alt={company} class="experience-logo" />
@@ -102,5 +102,11 @@ import { experience } from '../consts';
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .experience {
+      margin-top: 60px;
+    }
   }
 </style>

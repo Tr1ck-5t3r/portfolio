@@ -11,12 +11,12 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile1 } from '../consts';
       width={200}
       src={profile1}
       alt="Profile"
-      class="hero-image"
+      class="hero-image spinner"
     />
     <div class="hero-content">
-      <h2>
-        <span class="name">Hi👋</span> I'm <span class="name">{Name}</span>
-      </h2>
+      <div class="name">
+        Hi <div class="wave">👋</div> I'm {Name}
+      </div>
       <div class="position">
         <p>{desig}</p>
       </div>
@@ -178,6 +178,10 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile1 } from '../consts';
 </section>
 
 <style>
+
+  .svg{
+    display: block;
+  }
   .hero {
     display: flex;
     flex-direction: column;
@@ -250,7 +254,7 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile1 } from '../consts';
   }
 
   .postion p {
-    font-size: 1.5rem;
+    font-size: 1.75em;
     color: var(--text-color);
   }
 
@@ -267,5 +271,16 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile1 } from '../consts';
   }
   .name {
     font-size: 2rem;
+    font;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ @media only screen and (max-width: 700px) {
+    svg{
+      display: none;
+    }
+    
   }
 </style>

@@ -4,6 +4,7 @@
 export const Name = 'Tarun RG';
 export const desig = 'Final year student @ Amrita Vishwa Vidyapeetham Chennai';
 export const profile1 = '/tarun.jpeg';
+const baseurl = "tarun-rg.in"
 export const SITE_DESCRIPTION =
   'Tarun RG, final year CSE student at Amrita Vishwa Vidyapeetham Chennai';
 
@@ -46,24 +47,23 @@ export const current_company = {
 
 export const projectsHome = [
   {
-    title: 'Project One',
-    description: 'An AI-powered image reconstruction tool using GANs.',
-    link: 'https://github.com/yourusername/project-one',
+    title: 'Medix',
+    description:
+      'React-based application to predict symptoms and aid the diagnostic process',
+    link: '/projects/medical-diagnosis/',
     image: '/project.webp',
   },
   {
-    title: 'Project Two',
-    description:
-      'A responsive portfolio built with Astro.js and GSAP animations.',
-    link: 'https://yourportfolio.com',
-    image: '/project.webp',
+    title: 'Musix Player',
+    description: 'Next.js-based music sharing and playing platform.',
+    link: '/projects/musix-player/',
+    image: 'project1.jpeg',
   },
   {
-    title: 'Project Three',
-    description:
-      'A cloud-based data visualization dashboard for real-time analytics.',
-    link: 'https://github.com/yourusername/project-three',
-    image: '/project.webp',
+    title: 'Snake Zenia',
+    description: 'A Java applet emulation of the classic Snake game',
+    link: '/projects/snake-zenia/',
+    image: '/project2.jpg',
   },
 ];
 

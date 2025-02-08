@@ -8,7 +8,7 @@ import { projectsHome as projects } from '../consts';
     <div class="projects-grid">
       {
         projects.map(({ title, description, link, image }) => (
-          <div class="project-card">
+          <div class="project-card fadediv">
             <div class="project-header">
               <img src={image} alt={title} class="project-image" />
             </div>
@@ -55,8 +55,6 @@ import { projectsHome as projects } from '../consts';
     gap: 2rem;
     justify-content: center;
   }
-
-  
 
   .project-footer {
     padding: 1rem;

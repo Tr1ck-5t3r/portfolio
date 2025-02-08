@@ -6,21 +6,30 @@ const validatedCertificates: Certificate[] = certificates;
 ---
 
 <section id="certificates" class="certificates-section">
-  <div class="certificates-container">
+  <div class="certificates-container"  >
     <h2 class="section-title">My Certifications 🏆</h2>
     <div class="certificates-grid">
-      {validatedCertificates.map(({ label, image, dates, description }) => (
-        <div class="certificate-card">
-          <div class="certificate-header">
-            <img src={image.src} alt={image.alt || label} class="certificate-image" loading="lazy" />
+      {
+        validatedCertificates.map(({ label, image, dates, description }) => (
+          <div class="certificate-card fadediv">
+            <div class="certificate-header">
+              <img
+                src={image.src}
+                alt={image.alt || label}
+                class="certificate-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certificate-body">
+              <h3>{label}</h3>
+              <p class="date-range">
+                {dates.start} - {dates.end}
+              </p>
+              <p>{description}</p>
+            </div>
           </div>
-          <div class="certificate-body">
-            <h3>{label}</h3>
-            <p class="date-range">{dates.start} - {dates.end}</p>
-            <p>{description}</p>
-          </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>
@@ -56,12 +65,14 @@ const validatedCertificates: Certificate[] = certificates;
     border-radius: 12px;
     overflow: hidden;
     padding: 1.5rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease-in-out,
+      box-shadow 0.3s ease;
   }
 
   .certificate-card:hover {
     transform: scale(1.05);
-        box-shadow: var(--nav-shadow);
+    box-shadow: var(--nav-shadow);
   }
 
   .certificate-header {

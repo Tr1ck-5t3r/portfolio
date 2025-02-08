@@ -9,19 +9,28 @@ const validatedAwards: Award[] = awards;
   <div class="awards-container">
     <h2 class="section-title">My Awards 🏆 & Publications 📢</h2>
     <div class="awards-grid">
-      {validatedAwards.map(({ title, image, dates, venue, description }) => (
-        <div class="award-card">
-          <div class="award-header">
-            <img src={image.src} alt={image.alt || title} class="award-image" loading="lazy" />
+      {
+        validatedAwards.map(({ title, image, dates, venue, description }) => (
+          <div class="award-card fadediv">
+            <div class="award-header">
+              <img
+                src={image.src}
+                alt={image.alt || title}
+                class="award-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="award-body">
+              <h3>{title}</h3>
+              <p class="award-date">{dates}</p>
+              <p class="award-venue">
+                <strong>Venue:</strong> {venue}
+              </p>
+              <p>{description}</p>
+            </div>
           </div>
-          <div class="award-body">
-            <h3>{title}</h3>
-            <p class="award-date">{dates}</p>
-            <p class="award-venue"><strong>Venue:</strong> {venue}</p>
-            <p>{description}</p>
-          </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>
@@ -57,7 +66,9 @@ const validatedAwards: Award[] = awards;
     border-radius: 12px;
     overflow: hidden;
     padding: 1.5rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease-in-out,
+      box-shadow 0.3s ease;
   }
 
   .award-card:hover {

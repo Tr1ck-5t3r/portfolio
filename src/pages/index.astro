@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import AboutMini from '../components/AboutMini.astro';
 import Hero from '../components/Hero.astro';
+import 'aos/dist/aos.css';
 import { Name, SITE_DESCRIPTION } from '../consts';
 import Projects from '../components/Projects.astro';
 import Experience from '../components/Experience.astro';
@@ -13,6 +14,7 @@ import Experience from '../components/Experience.astro';
 <html lang="en">
   <head>
     <BaseHead title={Name} description={SITE_DESCRIPTION} />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <Header />
