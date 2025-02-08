@@ -149,6 +149,7 @@ a{
   cursor: pointer;
 }
 
+
 @keyframes spin {
     to {
       transform: rotateY(1turn);
@@ -175,7 +176,7 @@ a{
   } 
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) and (min-width: 800px) {
   @supports (animation-timeline: scroll()) {
     .fadediv {
       animation: fadeIn linear both;
@@ -194,7 +195,7 @@ a{
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) and (min-width: 800px) {
   .scalediv:hover {
     animation: scale 1s ease-in-out both;
   }
