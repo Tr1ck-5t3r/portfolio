@@ -13,7 +13,7 @@ type IconName =
 ---
 
 <section id="about" class="about">
-  <div class="about-container fadediv"  >
+  <div class="about-container fadediv">
     <div class="left">
       <div class="animation-container">
         <h2>I'm a</h2>
@@ -100,9 +100,7 @@ type IconName =
   }
 
   .right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
   .animation-container {
     display: flex;
@@ -212,9 +210,11 @@ type IconName =
     margin-top: 20px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
     .right {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
