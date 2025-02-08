@@ -169,14 +169,14 @@ a{
 
 @keyframes fadeIn {
   from {
-    opacity: 0.1;
+    opacity: 0.25;
   }
   to {
     opacity: 1;
   } 
 }
 
-@media (prefers-reduced-motion: no-preference) and (min-width: 800px) {
+@media (prefers-reduced-motion: no-preference) and (min-width: 1000px) {
   @supports (animation-timeline: scroll()) {
     .fadediv {
       animation: fadeIn linear both;
@@ -195,7 +195,7 @@ a{
   }
 }
 
-@media (prefers-reduced-motion: no-preference) and (min-width: 800px) {
+@media (prefers-reduced-motion: no-preference) and (min-width: 1000px) {
   .scalediv:hover {
     animation: scale 1s ease-in-out both;
   }

@@ -3,7 +3,7 @@
 
 export const Name = 'Tarun RG';
 export const desig = 'Final year student @ Amrita Vishwa Vidyapeetham Chennai';
-export const profile1 = '/tarun.jpeg';
+export const profile1 = '/tarun.webp';
 const baseurl = "tarun-rg.in"
 export const SITE_DESCRIPTION =
   'Tarun RG, final year CSE student at Amrita Vishwa Vidyapeetham Chennai';
@@ -42,7 +42,7 @@ export const interests: Interest[] = [
 
 export const current_company = {
   name: 'Tredence',
-  path: '/tredence.jpg',
+  path: '/tredence.webp',
 };
 
 export const projectsHome = [
@@ -57,13 +57,13 @@ export const projectsHome = [
     title: 'Musix Player',
     description: 'Next.js-based music sharing and playing platform.',
     link: '/projects/musix-player/',
-    image: 'project1.jpeg',
+    image: 'project1.webp',
   },
   {
     title: 'Snake Zenia',
     description: 'A Java applet emulation of the classic Snake game',
     link: '/projects/snake-zenia/',
-    image: '/project2.jpg',
+    image: '/project2.webp',
   },
 ];
 
@@ -84,7 +84,7 @@ export const experience: ExperienceItem[] = [
     description:
       'Implemented various Machine Learning models and gained practical experience in the field of Artificial Intelligence. \
       Worked on projects like Sentiment Analysis, Image Recognition, and Speech Recognition.',
-    logo: '/prodigy-infotech.jpg',
+    logo: '/prodigy-infotech.webp',
   },
   {
     company: 'NxWeb',
@@ -93,7 +93,7 @@ export const experience: ExperienceItem[] = [
     description:
       'Understanding client requirements and developing personalized technology-driven solutions that help businesses achieve \
      their goals through innovation and tailored approaches.',
-    logo: '/nxweb.jpg',
+    logo: '/nxweb.webp',
   },
   // Add more experience objects if needed
 ];
@@ -115,7 +115,7 @@ export const certificates: Certificate[] = [
   {
     label: "AWS Academy Cloud Architecting",
     image: {
-      src: "/cloud-architecting.jpg",
+      src: "/cloud-architecting.webp",
       alt: "AWS Cloud Architecting Certificate"
     },
     dates: {
@@ -127,7 +127,7 @@ export const certificates: Certificate[] = [
   {
     label: "AWS Academy Cloud Foundations",
     image: {
-      src: "/cloud-foundations.jpg",
+      src: "/cloud-foundations.webp",
       alt: "AWS Cloud Foundations Certificate"
     },
     dates: {
@@ -139,7 +139,7 @@ export const certificates: Certificate[] = [
   {
     label: "People and Soft Skills for Professional and Personal Success - IBM",
     image: {
-      src: "/ibm-soft-skills.jpg",
+      src: "/ibm-soft-skills.webp",
       alt: "IBM Soft Skills Certificate"
     },
     dates: {
@@ -151,7 +151,7 @@ export const certificates: Certificate[] = [
   {
     label: "Technical Support Fundamentals - Google",
     image: {
-      src: "/google.jpg",
+      src: "/google.webp",
       alt: "Google Technical Support Certificate"
     },
     dates: {
@@ -163,7 +163,7 @@ export const certificates: Certificate[] = [
   {
     label: "Intro to Machine Learning - Kaggle",
     image: {
-      src: "/kaggle.jpg",
+      src: "/kaggle.webp",
       alt: "Kaggle Machine Learning Certificate"
     },
     dates: {
@@ -175,7 +175,7 @@ export const certificates: Certificate[] = [
   {
     label: "Introduction to Cybersecurity",
     image: {
-      src: "/cisco-cybersecurity.jpg",
+      src: "/cisco-cybersecurity.webp",
       alt: "Cisco Cybersecurity Certificate"
     },
     dates: {
@@ -211,7 +211,7 @@ export const awards: Award[] = [
   {
     title: "1st place - Qrack-It - Kriya 23",
     image: {
-      src: "/PSG_College.jpg",
+      src: "/PSG_College.webp",
       alt: "PSG College of Technology"
     },
     dates: "03/2023",
@@ -221,7 +221,7 @@ export const awards: Award[] = [
   {
     title: "2nd Place - CodeAstra 22",
     image: {
-      src: "/amrita.jpg",
+      src: "/amrita.webp",
       alt: "Amrita Vishwa Vidyapeetham"
     },
     dates: "08/2022",
@@ -231,7 +231,7 @@ export const awards: Award[] = [
   {
     title: "1st Place - CodeInfo - 20",
     image: {
-      src: "/Kumaraguru_College.jpg",
+      src: "/Kumaraguru_College.webp",
       alt: "Kumaraguru College of Technology"
     },
     dates: "02/2020",
@@ -241,7 +241,7 @@ export const awards: Award[] = [
   {
     title: "Subject Topper - Computer Science",
     image: {
-      src: "/Stanes-school.jpg",
+      src: "/Stanes-school.webp",
       alt: "Stanes School ICSE/ISC"
     },
     dates: "08/2019",

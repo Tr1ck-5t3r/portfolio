@@ -1,6 +1,7 @@
 ---
 import { Icon } from '@astrojs/starlight/components';
 import { interests, current_company } from '../consts';
+import { Image } from 'astro:assets';
 type IconName =
   | 'seti:java'
   | 'seti:python'
@@ -44,18 +45,7 @@ type IconName =
       <div></div>
     </div>
     <div class="right">
-      <script
-        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-        type="module"></script>
-      <dotlottie-player
-        src="https://lottie.host/fe3d074f-15ce-4a8a-a372-57464be2595b/yKo7T5VslD.lottie"
-        background="transparent"
-        speed="1"
-        style="width: 500px; height: 500px"
-        loop
-        autoplay
-      >
-      </dotlottie-player>
+      <img src='/code-typing-animate.gif' class="coding-gif" alt="Animation"/>
     </div>
   </div>
 </section>
@@ -209,6 +199,10 @@ type IconName =
     margin-top: 20px;
   }
 
+  .coding-gif{
+    height: 350px;
+    width: auto;
+  }
   @media screen and (min-width: 600px) {
     .right {
       display: flex;
