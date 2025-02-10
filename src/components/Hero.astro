@@ -12,6 +12,7 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile } from '../consts';
       src="/tarun.webp"
       alt="Profile"
       class="hero-image spinner"
+      priority
     />
     <div class="hero-content">
       <div class="name">
@@ -178,8 +179,7 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile } from '../consts';
 </section>
 
 <style>
-
-  .svg{
+  .svg {
     display: block;
   }
   .hero {
@@ -276,10 +276,9 @@ import { SOCIAL_MEDIA as sc, Name, desig, profile } from '../consts';
     justify-content: space-between;
   }
 
- @media only screen and (max-width: 700px) {
-    svg{
+  @media only screen and (max-width: 700px) {
+    svg {
       display: none;
     }
-    
   }
 </style>
